@@ -1,0 +1,30 @@
+<div class="container">
+  <h1>
+    {{title}}!
+  </h1>
+
+  <input type="text" [(ngModel)]="title">
+
+  <p>{{ title }}</p>
+
+  <p [innerHTML]="'bonjour'" [style.color]="'red'">Lorem ipsum dolor sit amet.</p>
+  <input type="checkbox" [checked]="1 == 2" [hidden]="5 != 4">
+
+  <hr>
+
+  <button (click)="clickMe()">Click Me</button>
+
+  <hr>
+
+  <input type="text" class="form-control" [(ngModel)]="name" placeholder="Two Way [(ngModel)]">
+  <input type="text" class="form-control" (input)="updateName($event)" placeholder="Event Binding (input)">
+
+  {{ name }}
+
+</div>
+
+<div class="container">
+  <div class="jumbotron">
+    <app-hello></app-hello>
+  </div>  
+</div>
