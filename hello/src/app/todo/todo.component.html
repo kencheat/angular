@@ -1,0 +1,14 @@
+<div class="jumbotron">
+  <div class="form-group">
+    <input type="text"
+      class="form-control"
+      placeholder="Write a task"
+      (keyup)="addTask($event)"
+      [(ngModel)]="taskText">
+  </div>
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let task of tasks">
+      {{ task.title }}
+    </li>
+  </ul>
+</div>
