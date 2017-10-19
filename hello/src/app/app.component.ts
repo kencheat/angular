@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Hello World';
   name = '';
+  btnStatus: boolean = false;
 
   clickMe(): void {
     this.title = 'Ma fonction Click Me';

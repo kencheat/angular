@@ -16,6 +16,10 @@
 
   <hr>
 
+  <button (click)="btnStatus=!btnStatus">{{ btnStatus ? 'Off' : 'On' }}</button>
+
+  <hr>
+
   <input type="text" class="form-control" [(ngModel)]="name" placeholder="Two Way [(ngModel)]">
   <input type="text" class="form-control" (input)="updateName($event)" placeholder="Event Binding (input)">
 
@@ -27,4 +31,8 @@
   <div class="jumbotron">
     <app-hello></app-hello>
   </div>  
+
+  <app-twitter></app-twitter>
+
 </div>
+
